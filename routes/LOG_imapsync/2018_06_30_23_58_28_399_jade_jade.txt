@@ -1,0 +1,20 @@
+Transfer started at Sat Jun 30 23:58:28 2018
+PID is 16654
+Log file is LOG_imapsync/2018_06_30_23_58_28_399_jade_jade.txt ( to change it, use --logfile path ; or use --nolog to turn off logging )
+Load is 3.15 2.66 2.50 on 4 cores
+Current directory is /Users/X_Crowds/Documents/Work/Thaidata/TDHDashboard/routes
+Real user id is root (uid 0)
+Effective user id is root (euid 0)
+$RCSfile: imapsync,v $ $Revision: 1.836 $ $Date: 2017/09/05 16:14:53 $ 
+Here is arins-MacBook-Pro.local, a 1.6 GiB [darwin] system (Darwin arins-MacBook-Pro.local 17.4.0 Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64 x86_64)
+with Perl 5.18.2 and Mail::IMAPClient 3.39
+Command line used:
+/usr/local/Cellar/imapsync/1.836/libexec/bin/imapsync --host1 gma.com --user1 jade --password1 MASKED --host2 aj.com --user2 jade --password2 MASKED --no-modulesversion
+Temp directory is /tmp  ( to change it use --tmpdir dirpath )
+PID file is /tmp/imapsync.pid ( to change it use --pidfile filepath ; to avoid it use --pidfile "" )
+/tmp/imapsync.pid already exists, overwriting it ( use --pidfilelocking to avoid concurrent runs )
+Writing my PID 16654 in /tmp/imapsync.pid
+
+Got a signal INT
+Hit 2 ctr-c within 2 seconds to exit the program
+Hit only 1 ctr-c to reconnect to both imap servers

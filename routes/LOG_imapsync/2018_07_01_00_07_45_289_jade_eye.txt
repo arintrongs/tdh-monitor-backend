@@ -1,0 +1,20 @@
+Transfer started at Sun Jul  1 00:07:45 2018
+PID is 17921
+Log file is LOG_imapsync/2018_07_01_00_07_45_289_jade_eye.txt ( to change it, use --logfile path ; or use --nolog to turn off logging )
+Load is 1.56 2.25 2.42 on 4 cores
+Current directory is /Users/X_Crowds/Documents/Work/Thaidata/TDHDashboard/routes
+Real user id is TomFoolery (uid 501)
+Effective user id is TomFoolery (euid 501)
+$RCSfile: imapsync,v $ $Revision: 1.836 $ $Date: 2017/09/05 16:14:53 $ 
+Here is arins-MacBook-Pro.local, a 1.8 GiB [darwin] system (Darwin arins-MacBook-Pro.local 17.4.0 Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64 x86_64)
+with Perl 5.18.2 and Mail::IMAPClient 3.39
+Command line used:
+/usr/local/Cellar/imapsync/1.836/libexec/bin/imapsync --host1 gmail.com --user1 jade --password1 MASKED --host2 gmail.com --user2 eye --password2 MASKED --no-modulesversion
+Temp directory is /var/folders/gr/z_vl7sfj2b7ckxgmllk0jt7c0000gn/T  ( to change it use --tmpdir dirpath )
+PID file is /var/folders/gr/z_vl7sfj2b7ckxgmllk0jt7c0000gn/T/imapsync.pid ( to change it use --pidfile filepath ; to avoid it use --pidfile "" )
+Writing my PID 17921 in /var/folders/gr/z_vl7sfj2b7ckxgmllk0jt7c0000gn/T/imapsync.pid
+
+Got a signal INT
+Hit 2 ctr-c within 2 seconds to exit the program
+Hit only 1 ctr-c to reconnect to both imap servers
+For now only one signal INT within 2 seconds.
