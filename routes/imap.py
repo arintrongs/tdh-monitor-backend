@@ -2,10 +2,12 @@ import subprocess
 import sys
 import os
 dirAbs = os.path.dirname(os.path.abspath(__file__))
+uuid = sys.argv[1]
+host1 = sys.argv[2]
+host2 = sys.argv[3]
 file = open(dirAbs+'/user.txt')
-file_w = open(dirAbs+'/error_user.txt', "w")
-host1 = sys.argv[1]
-host2 = sys.argv[2]
+file_w = open('/var/www/html/imap_log/'+uuid+'.txt', "w")
+file_w.write('Error Items\n')
 for i in file:
     s = i.split(',')
     user1 = s[0].strip()
@@ -14,7 +16,7 @@ for i in file:
     pass2 = s[3].strip()
     try:
         subprocess.check_call(['imapsync', '--host1', host1, '--user1', user1, '--password1',
-                               pass1, '--host2', host2, '--user2', user1, '--password2', pass1])
-        # subprocess.check_call(['imapsync','--host1','139.162.26.199','--user1',i.strip(),'--password1','bangkok999','--host2','mail-02.thaidata.cloud','--user2',i.strip(),'--password2','bangkok999'])
+                               pass1, '--host2', host2, '--user2', user2, '--password2', pass2])
     except subprocess.CalledProcessError:
-        file_w.write(i)
+        file_w.write(user1 + ' --> ' + user2 + '\n') 
+

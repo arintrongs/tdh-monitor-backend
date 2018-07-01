@@ -20,10 +20,8 @@ const imap = async () => {
     .child(uuid)
     .child('status')
     .set('Processing')
-  await exec(
-    `tsp python3 ${__dirname}/imap.py ` + `${originHost} ${destinationHost}`
-  )
+  await exec(`tsp python3 ${__dirname}/imap.py `+`${uuid} ${originHost} ${destinationHost}`)
   await exec(`tsp node ${__dirname}/finish.js ${uuid}`)
-  process.exit()
+ process.exit()
 }
 imap()

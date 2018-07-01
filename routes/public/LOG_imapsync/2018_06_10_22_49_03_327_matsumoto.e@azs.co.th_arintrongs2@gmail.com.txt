@@ -1,0 +1,75 @@
+Transfer started at Sun Jun 10 22:49:03 2018
+PID is 14563
+Log file is LOG_imapsync/2018_06_10_22_49_03_327_matsumoto.e@azs.co.th_arintrongs2@gmail.com.txt ( to change it, use --logfile path ; or use --nolog to turn off logging )
+Load is 2.39 2.43 2.45 on 4 cores
+Current directory is /Users/X_Crowds/Documents/Work/Thaidata/TDHDashboard/routes/public
+Real user id is TomFoolery (uid 501)
+Effective user id is TomFoolery (euid 501)
+$RCSfile: imapsync,v $ $Revision: 1.836 $ $Date: 2017/09/05 16:14:53 $ 
+Here is arins-MacBook-Pro.local, a 1.7 GiB [darwin] system (Darwin arins-MacBook-Pro.local 17.4.0 Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64 x86_64)
+with Perl 5.18.2 and Mail::IMAPClient 3.39
+Command line used:
+/usr/local/Cellar/imapsync/1.836/libexec/bin/imapsync --host1 mail-01.thaidata.cloud --user1 matsumoto.e@azs.co.th --password1 MASKED --host2 imap.gmail.com --user2 arintrongs2@gmail.com --password2 MASKED
+Temp directory is /var/folders/gr/z_vl7sfj2b7ckxgmllk0jt7c0000gn/T  ( to change it use --tmpdir dirpath )
+PID file is /var/folders/gr/z_vl7sfj2b7ckxgmllk0jt7c0000gn/T/imapsync.pid ( to change it use --pidfile filepath ; to avoid it use --pidfile "" )
+/var/folders/gr/z_vl7sfj2b7ckxgmllk0jt7c0000gn/T/imapsync.pid already exists, overwriting it ( use --pidfilelocking to avoid concurrent runs )
+Writing my PID 14563 in /var/folders/gr/z_vl7sfj2b7ckxgmllk0jt7c0000gn/T/imapsync.pid
+Modules version list:
+Authen::NTLM         1.09
+Compress::Zlib       2.06
+Crypt::OpenSSL::RSA  0.28
+Data::Uniqid         0.12
+Digest::HMAC_MD5     1.01
+Digest::HMAC_SHA1    1.03
+Digest::MD5          2.52
+File::Copy::Recursive 0.38
+File::Spec           3.40
+Getopt::Long         2.39
+HTML::Entities       3.69
+IO::Socket           1.36
+IO::Socket::INET     1.33
+IO::Socket::INET6    2.72
+IO::Socket::SSL      1.966
+IO::Tee              0.65
+JSON                 2.94
+JSON::WebToken       0.10
+LWP                  6.05
+Mail::IMAPClient     3.39
+Net::Ping            2.41
+Net::SSLeay          1.72
+Term::ReadKey        2.31
+Test::MockObject     1.20161202
+Time::HiRes          1.9725
+URI::Escape          3.31
+Unicode::String      2.10
+( use --no-modulesversion to turn off printing this Perl modules list )
+
+Got a signal INT
+Hit 2 ctr-c within 2 seconds to exit the program
+Hit only 1 ctr-c to reconnect to both imap servers
+For now only one signal INT within 2 seconds.
+Host2: sslcheck detected open ssl port 993 so turning ssl on (use --nossl2 --notls2 to turn off SSL and TLS wizardry)
+SSL debug mode level is --debugssl 1 (can be set from 0 meaning no debug to 4 meaning max debug)
+Host2: SSL default mode is like --sslargs2 SSL_verify_mode=0 meaning SSL_VERIFY_NONE on host2 (do not check the certificate server)
+Host2: Use --sslargs2 SSL_verify_mode=1 for SSL_VERIFY_PEER on host2
+Info: turned ON syncinternaldates, will set the internal dates (arrival dates) on host2 same as host1.
+Host1: will try to use LOGIN authentication on host1
+Host2: will try to use LOGIN authentication on host2
+Host1: imap connexion timeout is 120 seconds
+Host2: imap connexion timeout is 120 seconds
+Host1: IMAP server [mail-01.thaidata.cloud] port [143] user [matsumoto.e@azs.co.th]
+Host2: IMAP server [imap.gmail.com] port [993] user [arintrongs2@gmail.com]
+Host1: connecting and login on host1 [mail-01.thaidata.cloud] port [143] with user [matsumoto.e@azs.co.th]
+Host1 IP address: 27.254.81.169
+Host1 banner: * OK IMAP4rev1 SmarterMail
+Host1 capability before authentication: IMAP4rev1 AUTH=CRAM-MD5 UIDPLUS QUOTA XLIST CHILDREN
+Host1: success login on [mail-01.thaidata.cloud] with user [matsumoto.e@azs.co.th] auth [LOGIN]
+Host2: connecting and login on host2 [imap.gmail.com] port [993] with user [arintrongs2@gmail.com]
+
+Got a signal INT
+Hit 2 ctr-c within 2 seconds to exit the program
+Hit only 1 ctr-c to reconnect to both imap servers
+Got two signals INT within 2 seconds. Exiting...
+Ended by a signal
+Exiting with return value 6
+Log file is LOG_imapsync/2018_06_10_22_49_03_327_matsumoto.e@azs.co.th_arintrongs2@gmail.com.txt ( to change it, use --logfile filepath ; or use --nolog to turn off logging )
