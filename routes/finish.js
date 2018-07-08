@@ -10,9 +10,14 @@ var config = {
 }
 firebase.initializeApp(config)
 const finish = async () => {
-   const uuid = process.argv[2]
-var database = firebase.database()
-    await database
+  const uuid = process.argv[2]
+  var database = firebase.database()
+  await database
+    .ref('mail-migration')
+    .child(uuid)
+    .child('jobId')
+    .set(null)
+  await database
     .ref('mail-migration')
     .child(uuid)
     .child('status')

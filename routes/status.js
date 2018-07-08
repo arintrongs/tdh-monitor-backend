@@ -1,5 +1,7 @@
 var firebase = require('firebase')
-const { exec } = require('child_process')
+const { promisify } = require('util')
+const exec = promisify(require('child_process').exec)
+
 var config = {
   apiKey: 'AIzaSyDIpabXAOtnYE0XFMz4hSzhBj7v_fFzrxc',
   authDomain: 'tdh-monitor.firebaseapp.com',
@@ -20,8 +22,18 @@ const imap = async () => {
     .child(uuid)
     .child('status')
     .set('Processing')
-  await exec(`tsp python3 ${__dirname}/imap.py `+`${uuid} ${originHost} ${destinationHost}`)
+  const { stdout, stderr } = await exec(
+    `tsp python3 ${__dirname}/imap.py ` +
+      `${uuid} ${originHost} ${destinationHost}`
+  )
+  // const { stdout, stderr } = await exec(`tsp python3 ${__dirname}/5secs.py`)
+  const jobId = parseInt(stdout)
+  await database
+    .ref('mail-migration')
+    .child(uuid)
+    .child('jobId')
+    .set(jobId)
   await exec(`tsp node ${__dirname}/finish.js ${uuid}`)
- process.exit()
+  process.exit()
 }
 imap()

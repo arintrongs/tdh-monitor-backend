@@ -7,8 +7,9 @@ var bodyParser = require('body-parser')
 const fileUpload = require('express-fileupload')
 const cors = require('cors')
 
-var sharedhost = require('./routes/sharedhost')
-var upload = require('./routes/upload')
+const sharedhost = require('./routes/sharedhost')
+const upload = require('./routes/upload')
+const kill = require('./routes/kill')
 
 var app = express()
 
@@ -30,6 +31,8 @@ app.use(fileUpload())
 app.use('/', express.static(`${__dirname}/public`))
 app.use('/sharedhost', sharedhost)
 app.use('/upload', upload)
+app.use('/kill', kill)
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found')

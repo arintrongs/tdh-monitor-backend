@@ -4,7 +4,8 @@ const firebase = require('firebase')
 const moment = require('moment')
 const uuidv4 = require('uuid/v1')
 const Joi = require('joi')
-const { exec } = require('child_process')
+const { promisify } = require('util')
+const exec = promisify(require('child_process').exec)
 const config = {
   apiKey: 'AIzaSyDIpabXAOtnYE0XFMz4hSzhBj7v_fFzrxc',
   authDomain: 'tdh-monitor.firebaseapp.com',
@@ -38,10 +39,11 @@ router.post('/', async function(req, res, next) {
   const destinationHost = req.body.destination_host
 
   await file.mv(`${__dirname}/user.txt`)
-  await exec(
+  const jobId = await exec(
     `tsp node ${__dirname}/status.js ` +
       `${uuid} ${originHost} ${destinationHost}`
   )
+
   database.ref('mail-migration/' + uuid).set({
     username: req.body.user,
     subject: req.body.subject,
@@ -50,6 +52,7 @@ router.post('/', async function(req, res, next) {
       .utc()
       .toString(),
     timestamp: Date.now(),
+    jobId: null,
   })
   res.send({ message: 'Done!!' })
 })

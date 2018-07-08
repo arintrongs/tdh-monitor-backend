@@ -1,3 +1,3 @@
 import time
-time.sleep(5)
+time.sleep(50000)
 print('Done')
