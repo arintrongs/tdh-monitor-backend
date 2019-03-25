@@ -13,11 +13,6 @@ const kill = require('./routes/kill')
 
 var app = express()
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'pug')
-
-// uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'))
 app.use(bodyParser.json())
@@ -28,7 +23,9 @@ app.use(cookieParser())
 app.use(cors())
 app.use(fileUpload())
 
-app.use('/', express.static(`${__dirname}/public`))
+app.get('/', (req, res) => {
+  return res.send('Hiiiiiiii')
+})
 app.use('/sharedhost', sharedhost)
 app.use('/upload', upload)
 app.use('/kill', kill)

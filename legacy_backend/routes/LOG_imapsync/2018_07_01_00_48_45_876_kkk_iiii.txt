@@ -1,0 +1,15 @@
+Transfer started at Sun Jul  1 00:48:45 2018
+PID is 31951
+Log file is LOG_imapsync/2018_07_01_00_48_45_876_kkk_iiii.txt ( to change it, use --logfile path ; or use --nolog to turn off logging )
+Load is 0.33 0.08 0.03 6/276 on 8 cores
+Current directory is /home/tdhdashboard/backend/routes
+Real user id is tdhdashboard (uid 1000)
+Effective user id is tdhdashboard (euid 1000)
+$RCSfile: imapsync,v $ $Revision: 1.836 $ $Date: 2017/09/05 16:14:53 $ 
+Here is ns1, a 3.9 GiB [linux] system (Linux ns1 4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017 x86_64)
+with Perl 5.22.1 and Mail::IMAPClient 3.38
+Command line used:
+/usr/bin/imapsync --host1 jade.com --user1 kkk --password1 MASKED --host2 test.com --user2 iiii --password2 MASKED --pidfilelocking
+Temp directory is /tmp  ( to change it use --tmpdir dirpath )
+PID file is /tmp/imapsync.pid ( to change it use --pidfile filepath ; to avoid it use --pidfile "" )
+/tmp/imapsync.pid already exists, another imapsync may be curently running. Aborting imapsync.

@@ -1,0 +1,45 @@
+Transfer started at Sun Jul  1 01:02:31 2018
+PID is 5458
+Log file is LOG_imapsync/2018_07_01_01_02_31_014_jad@kade.com_test@kasd.com.txt ( to change it, use --logfile path ; or use --nolog to turn off logging )
+Load is 0.00 0.09 0.11 5/276 on 8 cores
+Current directory is /home/tdhdashboard/backend/routes
+Real user id is tdhdashboard (uid 1000)
+Effective user id is tdhdashboard (euid 1000)
+$RCSfile: imapsync,v $ $Revision: 1.836 $ $Date: 2017/09/05 16:14:53 $ 
+Here is ns1, a 3.9 GiB [linux] system (Linux ns1 4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017 x86_64)
+with Perl 5.22.1 and Mail::IMAPClient 3.38
+Command line used:
+/usr/bin/imapsync --host1 jadedd.com --user1 jad@kade.com --password1 MASKED --host2 testdd.com --user2 test@kasd.com --password2 MASKED
+Temp directory is /tmp  ( to change it use --tmpdir dirpath )
+PID file is /tmp/imapsync.pid ( to change it use --pidfile filepath ; to avoid it use --pidfile "" )
+/tmp/imapsync.pid already exists, overwriting it ( use --pidfilelocking to avoid concurrent runs )
+Writing my PID 5458 in /tmp/imapsync.pid
+Modules version list:
+Authen::NTLM         1.09
+Compress::Zlib       2.069
+Crypt::OpenSSL::RSA  0.30
+Data::Uniqid         0.12
+Digest::HMAC_MD5     1.01
+Digest::HMAC_SHA1    1.03
+Digest::MD5          2.54
+File::Copy::Recursive 0.38
+File::Spec           3.56
+Getopt::Long         2.45
+HTML::Entities       3.69
+IO::Socket           1.38
+IO::Socket::INET     1.35
+IO::Socket::INET6    2.72
+IO::Socket::SSL      2.024
+IO::Tee              0.64
+JSON                 2.97001
+JSON::WebToken       0.10
+LWP                  6.34
+Mail::IMAPClient     3.38
+Net::Ping            2.43
+Net::SSLeay          1.72
+Term::ReadKey        2.33
+Test::MockObject     1.20161202
+Time::HiRes          1.9726
+URI::Escape          3.31
+Unicode::String      2.09
+( use --no-modulesversion to turn off printing this Perl modules list )

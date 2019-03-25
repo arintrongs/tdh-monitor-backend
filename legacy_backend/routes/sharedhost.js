@@ -1,9 +1,10 @@
 const util = require('util')
+const disk = require('diskusage')
+const os = require('os')
 const exec = util.promisify(require('child_process').exec)
 
 var express = require('express')
 var router = express.Router()
-
 async function get_everything() {
   let server = ['01', '03', '05', '07', '09', '11', '13', '15']
   let load = []
