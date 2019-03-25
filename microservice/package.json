@@ -10,7 +10,7 @@
     "body-parser": "~1.18.2",
     "cors": "^2.8.4",
     "diskusage": "^1.0.0",
-    "express": "~4.15.5",
+    "express": "^4.16.4",
     "nodemon": "^1.17.3",
     "yarn": "^1.5.1"
   }

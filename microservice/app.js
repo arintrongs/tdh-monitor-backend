@@ -1,6 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const disk = require('diskusage')
+const os = require('os')
 
 const app = express()
 const port = 3000
@@ -11,13 +13,6 @@ app.use(cors())
 
 app.get('/', (req, res) => {
   return res.send('Hiiiiiiii')
-})
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found')
-  err.status = 404
-  next(err)
 })
 
 app.get('/status', async (req, res) => {
@@ -36,9 +31,17 @@ app.get('/status', async (req, res) => {
     }
     return res.send(detail)
   } catch (e) {
+    console.log(e)
     return res.status(400).send('Something went wrong')
   }
 })
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found')
+  err.status = 404
+  next(err)
+})
+
 app.listen(port, () => {
   console.log(`Server is listening at port ${port}`)
 })
