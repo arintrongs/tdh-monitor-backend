@@ -215,6 +215,11 @@ chalk@^2.0.1:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
+check-disk-space@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/check-disk-space/-/check-disk-space-1.5.0.tgz#66647518e1d075186c0b3aa6c24983b1f6865474"
+  integrity sha512-Is5VP2B5eWjLxe22K2GJFr55zNrj2T+tTYQQ4ifXj23NULJWPgEyZPRM7yv0Vpg9HvCkvRC+OygfjZZqVrr2Ew==
+
 chokidar@^2.1.0:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.5.tgz#0ae8434d962281a5f56c72869e79cb6d9d86ad4d"

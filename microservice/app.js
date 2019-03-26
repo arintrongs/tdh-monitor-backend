@@ -1,8 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const disk = require('diskusage')
 const os = require('os')
+const checkDiskSpace = require('check-disk-space')
 
 const app = express()
 const port = 3000
@@ -17,17 +17,16 @@ app.get('/', (req, res) => {
 
 app.get('/status', async (req, res) => {
   try {
-    const { free, available, total } = await disk.check('/')
-
+    const { free, size } = await checkDiskSpace('/disk')
     const detail = {
       cpu: os.cpus(),
       total_mem: os.totalmem(),
       free_mem: os.freemem(),
       load_avg: os.loadavg(),
       uptime: os.uptime(),
-      disk_used: total - available,
-      disk_avail: available,
-      disk_total: total,
+      disk_used: size - free,
+      disk_avail: free,
+      disk_total: size,
     }
     return res.send(detail)
   } catch (e) {
