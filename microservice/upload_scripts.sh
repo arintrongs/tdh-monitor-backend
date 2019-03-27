@@ -7,3 +7,4 @@ sshpass -p 'PrinceTyo;oyomN5575' scp /Users/tomfoolery/Documents/Work/Thaidata/t
 sshpass -p 'PrinceTyo;oyomN5575' scp /Users/tomfoolery/Documents/Work/Thaidata/tdh-monitor-backend/microservice/load.php root@cloud-linux15.thaidatahosting.com:/var/www/html/
 sshpass -p 'PrinceTyo;oyomN5575' scp /Users/tomfoolery/Documents/Work/Thaidata/tdh-monitor-backend/microservice/load.php root@cloud-linux101.thaidatahosting.com:/var/www/html/
 sshpass -p 'PrinceTyo;oyomN5575' scp /Users/tomfoolery/Documents/Work/Thaidata/tdh-monitor-backend/microservice/load.php root@cloud-linux102.thaidatahosting.com:/var/www/html/
+sshpass -p 'PrinceTyo;oyomN5575' scp /Users/tomfoolery/Documents/Work/Thaidata/tdh-monitor-backend/microservice/load.php root@cloud-linux103.thaidatahosting.com:/var/www/html/
